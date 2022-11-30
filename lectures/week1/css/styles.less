@@ -1,0 +1,27 @@
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@bg: #000;
+@text: #1be0e0;
+@border: #fff;
+
+
+body {
+    .flexcolumn();
+    background-color: @bg;
+    color: @text;
+
+    .zones {
+        border: @border 4px groove;
+    }
+}
