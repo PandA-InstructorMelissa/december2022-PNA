@@ -1,4 +1,4 @@
-# Session 1
+# Week 1 Session 1
 - Welcome / Congratulations for making it
 - Starting salary for dev vs. starting salary for optometrist / dentist
     - Schooling differences
@@ -29,3 +29,13 @@
     - Later this week, sending survey for groups
         - Timezone, stack preference, etc
     - Communicate with group via discord
+
+# Week 1 Session 2:
+
+- Group Questionnaire form went out today
+- Discussions
+- Proposals if you have not gotten a reply yet hang tight you should tonight
+    - If you haven't sent it in yet please send it ASAP
+- Tonight strings and arrays
+    - Strings - Manipulating time
+    - Arrays - Basic 13 1-3
