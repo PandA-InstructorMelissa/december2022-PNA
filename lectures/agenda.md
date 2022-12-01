@@ -39,3 +39,11 @@
 - Tonight strings and arrays
     - Strings - Manipulating time
     - Arrays - Basic 13 1-3
+
+# Week 1 Session 3:
+- Project Proposals
+- What if can't make presentations
+- Discusssions
+- 20 Min Rule
+- Imposter syndrome / Rubber Duck Coding
+- OOP - Developers and Websites
