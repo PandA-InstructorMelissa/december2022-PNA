@@ -43,7 +43,7 @@
 # Week 1 Session 3:
 - Project Proposals
 - What if can't make presentations
-- Discusssions
+- Discussions
 - 20 Min Rule
 - Imposter syndrome / Rubber Duck Coding
 - OOP - Developers and Websites
