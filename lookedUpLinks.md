@@ -1,3 +1,4 @@
 - https://www.w3schools.com/js/js_arrow_function.asp
 - https://nodejs.dev/en/learn/accept-input-from-the-command-line-in-nodejs/
 - https://nodejs.org/en/knowledge/command-line/how-to-prompt-for-command-line-input/
+- https://byjus.com/gate/difference-between-singly-linked-list-doubly-linked-list/#:~:text=Both%20Singly%20linked%20list%20and,link%20to%20the%20previous%20node.

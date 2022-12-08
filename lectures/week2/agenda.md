@@ -8,7 +8,10 @@
 
 
 # Week 2 Session 2:
-
+- Algo Core Assignments
+- Belt Verifications emails going out after class
+- Solo Projects
+- Singly Linked Lists Con't
 
 
 # Week 2 Session 3:
