@@ -1,6 +1,6 @@
 class Player {
-    constructor(playerName, morals) {
-        this.playerName = playerName
+    constructor(name, morals) {
+        this.name = name
         this.morals = morals // Good VS Bad
         this.health = 100 // max is 100 changes by 5
         this.strength = 10 // Can gain when wins fight or lose when looses
@@ -18,12 +18,12 @@ class Player {
     reduceStrength() {
         if (this.strength == 1) {
             this.strength -= 1
-            console.log(`${this.playerName}, you have lost all strength and died`)
+            console.log(`${this.name}, you have lost all strength and died`)
             if (this.attempts != 0) {
-                console.log(`${this.playerName}, you have another chance`)
+                console.log(`${this.name}, you have another chance`)
                 this.attempts -= 1
             } else {
-                console.log(`${this.playerName}, you are out of attempts, Game Over`)
+                console.log(`${this.name}, you are out of attempts, Game Over`)
                 this.alive = false
             }
         }
@@ -38,12 +38,12 @@ class Player {
         }
         if (this.health <= 5) {
             this.health -= 5
-            console.log(`${this.playerName}, you have died`)
+            console.log(`${this.name}, you have died`)
             if (this.attempts != 0) {
-                console.log(`${this.playerName}, you have another chance`)
+                console.log(`${this.name}, you have another chance`)
                 this.attempts -= 1
             } else {
-                console.log(`${this.playerName}, you are out of attempts, Game Over`)
+                console.log(`${this.name}, you are out of attempts, Game Over`)
                 this.alive = false
             }
         }
@@ -55,10 +55,11 @@ class Player {
     }
     increaseHealth() {
         if(this.health == 100) {
-            console.log(`${this.playerName}, you are at full health`)
+            console.log(`${this.name}, you are at full health`)
         } else {
             this.health+=5
         }  
         return this
     }
 }
+module.exports = {Player}

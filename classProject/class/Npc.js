@@ -23,3 +23,4 @@ class Npc {
 
     }
 }
+module.exports = {Npc}
