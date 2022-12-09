@@ -16,76 +16,30 @@ let morals = ''
 var player = ''
 console.log('before player instance', player)
 function playerName () {
-    const readline = require('readline').createInterface({
-        input: process.stdin,
-        output: process.stdout,
-      });
-    //   The \n creates a new terminal line making the terminal easier to read
-      // readline.question(`What's your name?\n`, name => {
-      //   console.log(`Hi ${name}!`);
-      //   player = new Player(name, morals)
-      //   readline.close();
-      //   console.log(messages.settingStage)
-      //   console.log('did we create a instance:', player)
-      //   return player
-      // });
+  const readline = require('readline');
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
 
-      readline.setPrompt('What is your name')
-      readline.prompt()
-      readline.on('line', (theName) => {
-        name = theName
-        // readline.close()
-      })
-      readline.setPrompt('What side are you on Good or Bad?')
-      readline.prompt()
-      readline.on('line', (theMorals) => {
-        morals = theMorals
-        readline.close()
-      })
-      
-}
-// playerName()
+  rl.question('What is your name ?\n ', function (theName) {
+    rl.question('What side are you on Good or Bad ?\n ', function (theMorals) {
+      console.log(`${theName}, is on the side of ${theMorals}`);
+      name = theName
+      morals = theMorals
+      rl.close();
+    });
+  });
 
-function testPlayer() {
-  player = new Player(name, morals)
-  console.log('the player', player)
+  rl.on('close', function () {
+    console.log('\nBYE BYE !!!');
+    player = new Player(name, morals)
+    console.log('did we create a instance:', player)
+    process.exit(0);
+  }); 
 }
-// testPlayer()
+playerName()
 
 // Need to set something up to allow the player to enter name before any other commands are run right now it prints the following console before we can type, allows us to type but doesn't re run the last console.
 
 
-// console.log(player)
-// // Game
-// var playing = true // This sets us up to turn off the while loop but keep it running as long as it is true
-// function start() {
-//     while (playing) {
-//         console.log(messages.welcome)
-//         playerName()
-//         if (player != null) {
-//             console.log(player)
-//         }
-//         playing = false
-//     }
-    
-// }
-// start()
-
-
-const readline = require('readline');
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question('What is your name ? ', function (name) {
-  rl.question('Where do you live ? ', function (country) {
-    console.log(`${name}, is a citizen of ${country}`);
-    rl.close();
-  });
-});
-
-rl.on('close', function () {
-  console.log('\nBYE BYE !!!');
-  process.exit(0);
-});
