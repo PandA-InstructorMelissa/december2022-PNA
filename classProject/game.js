@@ -11,17 +11,22 @@ var playerNotCreated = true
 
 // Game
 var playing = true // This sets us up to turn off the while loop but keep it running as long as it is true
-function start() {
+async function start() {
     while (playing) {
         console.log(messages.welcome)
         while (playerNotCreated) {
-            console.log('1',player)
+            // console.log('1',player)
             if (health === 100) {
                 playerNotCreated = false
             } else {
-                player = playerName()
+                player = await playerName()
+                playerNotCreated = false
             }
+            // console.log("the player:", player)
         }
+        console.log("the player 2:", player)
+        console.log(`${player.name} ${messages.settingStage}`)
+        console.log(messages.firstClue)
         playing = false
     }
     
